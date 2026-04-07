@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Contact": {
+      "title": "Contact Message",
+      "description": "A message sent from the contact form.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the person sending the message."
+        },
+        "mobile": {
+          "type": "string",
+          "description": "The mobile number of the sender."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address of the sender."
+        },
+        "message": {
+          "type": "string",
+          "description": "The content of the message."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The time the message was sent."
+        }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/contacts/{contactId}": {
+      "schema": "Contact",
+      "description": "Collection of contact messages."
+    }
+  }
+}
