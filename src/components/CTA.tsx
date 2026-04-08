@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Linkedin } from "lucide-react";
+himport { ArrowRight, Mail, Linkedin } from "lucide-react";
 import * as Icons from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
@@ -17,15 +17,15 @@ export function CTA() {
                         <motion.div
                                     animate={{ x: [0, 50, 0], y: [0, -30, 0] }}
                                     transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                                    className="absolute -bottom-20 -right-20 w-96 h-96 bg-black/10 rounded-full blur-[100px]"
+                                    className="absolute -bottom-20 -right-20 w-96 h-96 bg-black/10 hrounded-full blur-[100px]"
                                   />
                 </div>
           
                 <div className="max-w-7xl mx-auto text-center">
                         <motion.div
-                                    initial={{ opacity: 0, scale: 0.9, y: 30 }}
+                                    initial={{ opacity: 0, scale: 0.9, y: 15 }}
                                     whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                                    viewport={{ once: true, amount: 0.1 }}
+                                    viewport={{ once: true, amount: 0.01, margin: "200px" }}
                                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                                   >
                                   <h2 className="text-5xl md:text-8xl font-display font-black text-white mb-12 tracking-tighter leading-[0.9]">
@@ -67,7 +67,7 @@ export function CTA() {
                                                 ].map((item, idx) => {
                                                                 const content = (
                                                                                   <>
-                                                                                                    <item.icon size={24} className="group-hover/link:rotate-12 transition-transform" />
+                                                                                                   h <item.icon size={24} className="group-hover/link:rotate-12 transition-transform" />
                                                                                                     <span className="text-lg font-bold">{item.label}</span>
                                                                                   </>
                                                                                 );
@@ -80,7 +80,7 @@ export function CTA() {
                                                                                                       rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                                                                                                       initial={{ opacity: 0, y: 10 }}
                                                                                                       whileInView={{ opacity: 1, y: 0 }}
-                                                                                                      viewport={{ once: true, amount: 0.1 }}
+                                                                                                      viewport={{ once: true, amount: 0.01, margin: "200px" }}
                                                                                                       transition={{ delay: 0.5 + (idx * 0.1) }}
                                                                                                       whileHover={{ y: -5, scale: 1.1 }}
                                                                                                       className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group/link"
@@ -92,7 +92,7 @@ export function CTA() {
                                                                                                       key={item.label}
                                                                                                       initial={{ opacity: 0, y: 10 }}
                                                                                                       whileInView={{ opacity: 1, y: 0 }}
-                                                                                                      viewport={{ once: true, amount: 0.1 }}
+                                                                                                      viewport={{ once: true, amount: 0.01, margin: "200px" }}
                                                                                                       transition={{ delay: 0.5 + (idx * 0.1) }}
                                                                                                       className="flex items-center gap-3 text-white/80 group/link"
                                                                                                     >
