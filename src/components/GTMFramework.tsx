@@ -7,16 +7,16 @@ export function GTMFramework() {
     <section className="py-24 px-6 bg-surface relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.01, margin: "200px" }}
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-7xl font-display font-black mb-6 tracking-tighter">
             The <span className="text-brand">GTM</span> Engine
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            My systematic approach to launching and scaling products in 
+            My systematic approach to launching and scaling products in h
             the B2B SaaS and API ecosystem.
           </p>
         </motion.div>
@@ -29,9 +29,9 @@ export function GTMFramework() {
             return (
               <motion.div
                 key={id}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.01, margin: "200px" }}
                 transition={{ delay: idx * 0.1 }}
                 className="relative p-8 rounded-3xl bg-surface-soft border border-surface-border group hover:border-brand/30 transition-all"
               >
