@@ -1,4 +1,4 @@
-himport { ArrowRight, Mail, Linkedin } from "lucide-react";
+import { ArrowRight, Mail, Linkedin } from "lucide-react";
 import * as Icons from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
