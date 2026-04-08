@@ -39,7 +39,7 @@ export function Hero() {
   const duplicatedStats = [...IMPACT_STATS, ...IMPACT_STATS, ...IMPACT_STATS];
 
   return (
-    <section className="relative min-h-[80vh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center pt-32 pb-12 overflow-hidden">
       {/* Dynamic Background Glows */}
       <div className="absolute inset-0 -z-10">
         <motion.div
