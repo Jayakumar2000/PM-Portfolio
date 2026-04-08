@@ -35,13 +35,13 @@ export function ProjectGrid() {
                                   >
                                   <div className="max-w-2xl">
                                               <h2 className="text-4xl md:text-7xl font-display font-black mb-6 tracking-tighter">
-                                                            Case <span className="text-brand">Studies</span>span>
-                                              </h2>h2>
+                                                            Case <span className="text-brand">Studies</span>
+                                              </h2>
                                               <p className="text-xl text-white/60 leading-relaxed">
                                                             A selection of strategic launches and growth initiatives where positioning met execution to deliver measurable revenue impact.
-                                              </p>p>
-                                  </div>div>
-                        </motion.div>motion.div>
+                                              </p>
+                                  </div>
+                        </motion.div>
                 
                         <motion.div
                                     variants={containerVariants}
@@ -53,9 +53,9 @@ export function ProjectGrid() {
                           {PROJECTS.map((project) => (
                                                 <ProjectCard key={project.id} project={project} />
                                               ))}
-                        </motion.div>motion.div>
-                </div>div>
-          </section>section>
+                        </motion.div>
+                </div>
+          </section>
         );
 }
 
@@ -83,32 +83,32 @@ function ProjectCard({ project }: { project: any; key?: string | number }) {
                                     referrerPolicy="no-referrer"
                                   />
                         <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40" />
-                </div>div>
+                </div>
                 <div className="p-8">
                         <div className="flex flex-wrap gap-2 mb-4">
                           {project.tags.map((tag: string) => (
                               <span key={tag} className="text-[10px] font-bold uppercase tracking-widest text-white/40 border border-white/10 px-2 py-1 rounded">
                                 {tag}
-                              </span>span>
+                              </span>
                             ))}
-                        </div>div>
+                        </div>
                 
                         <h3 className="text-2xl font-display font-bold mb-4 group-hover:text-brand transition-colors">
                           {project.title}
-                        </h3>h3>
+                        </h3>
                 
                         <p className="text-white/60 mb-8 line-clamp-2">
                           {project.description}
-                        </p>p>
+                        </p>
                 
                         <div className="grid grid-cols-3 gap-4 border-t border-surface-border pt-6">
                           {project.stats.map((stat: any) => (
                               <div key={stat.label}>
-                                            <div className="text-lg font-display font-black text-brand">{stat.value}</div>div>
-                                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">{stat.label}</div>div>
-                              </div>div>
+                                            <div className="text-lg font-display font-black text-brand">{stat.value}</div>
+                                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">{stat.label}</div>
+                              </div>
                             ))}
-                        </div>div>
+                        </div>
                 
                         <motion.a
                                     href={project.link}
@@ -119,8 +119,8 @@ function ProjectCard({ project }: { project: any; key?: string | number }) {
                                     className="absolute top-6 right-6 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-brand hover:text-white shadow-xl"
                                   >
                                   <ArrowUpRight size={24} />
-                        </motion.a>motion.a>
-                </div>div>
-          </motion.div>motion.div>
+                        </motion.a>
+                </div>
+          </motion.div>
         );
-}</section>
+}
