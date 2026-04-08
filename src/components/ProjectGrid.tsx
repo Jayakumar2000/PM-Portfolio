@@ -14,7 +14,7 @@ const containerVariants: Variants = {
 };
 
 const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 15 },
     visible: {
           opacity: 1,
           y: 0,
@@ -29,7 +29,7 @@ export function ProjectGrid() {
                         <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true, amount: 0.1 }}
+                                    viewport={{ once: true, amount: 0.01, margin: "200px" }}
                                     transition={{ duration: 0.8 }}
                                     className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16"
                                   >
@@ -47,7 +47,7 @@ export function ProjectGrid() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: true, amount: 0.05 }}
+                                    viewport={{ once: true, amount: 0.01, margin: "200px" }}
                                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                                   >
                           {PROJECTS.map((project) => (
