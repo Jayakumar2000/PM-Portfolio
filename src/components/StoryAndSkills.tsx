@@ -16,7 +16,7 @@ const containerVariants: Variants = {
 };
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.95, y: 20 },
+  hidden: { opacity: 0, scale: 0.95, y: 15 },
   visible: { 
     opacity: 1, 
     scale: 1,
@@ -57,7 +57,7 @@ export function StoryAndSkills() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
                 whileInView={{ opacity: 1, scale: 1, rotate: 3 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.01, margin: "200px" }}
                 animate={{ 
                   y: [0, -15, 0],
                   rotate: [3, 5, 3]
@@ -81,9 +81,9 @@ export function StoryAndSkills() {
                 {/* Name & Designation Overlay */}
                 <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-20">
                   <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.01, margin: "200px" }}
                     transition={{ delay: 0.5 }}
                   >
                     <h3 className="text-3xl font-display font-black tracking-tighter text-white mb-1">JAYAKUMAR</h3>
@@ -137,7 +137,7 @@ export function StoryAndSkills() {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.01, margin: "200px" }}
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
               >
                 {SKILLS.map((skill) => {
