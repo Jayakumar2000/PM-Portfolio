@@ -34,10 +34,10 @@ export function Footer() {
         <div>
           <h4 className="font-display font-bold text-lg mb-6">Connect</h4>
           <div className="flex gap-4 mb-8">
-            <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-border flex items-center justify-center hover:bg-brand transition-all">
+            <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="w-10 h-10 rounded-full bg-surface-border flex items-center justify-center hover:bg-brand transition-all">
               <Linkedin size={20} />
             </a>
-            <a href={`mailto:${CONTACT_INFO.email}`} className="w-10 h-10 rounded-full bg-surface-border flex items-center justify-center hover:bg-brand transition-all">
+            <a href={`mailto:${CONTACT_INFO.email}`} aria-label="Send Email" className="w-10 h-10 rounded-full bg-surface-border flex items-center justify-center hover:bg-brand transition-all">
               <Mail size={20} />
             </a>
           </div>
