@@ -8,6 +8,7 @@ import { Story } from "./pages/Story";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { Admin } from "./pages/Admin";
+import { trackPageView } from "./lib/analytics";
 import { AnimatePresence, motion } from "motion/react";
 
 function ScrollToTop() {
@@ -15,6 +16,7 @@ function ScrollToTop() {
   
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (pathname !== "/admin") trackPageView(pathname);
   }, [pathname]);
   
   return null;
