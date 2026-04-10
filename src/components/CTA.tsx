@@ -17,7 +17,7 @@ export function CTA() {
                         <motion.div
                                     animate={{ x: [0, 50, 0], y: [0, -30, 0] }}
                                     transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                                    className="absolute -bottom-20 -right-20 w-96 h-96 bg-black/10 hrounded-full blur-[100px]"
+                                    className="absolute -bottom-20 -right-20 w-96 h-96 bg-black/10 rounded-full blur-[100px]"
                                   />
                 </div>
           
@@ -67,7 +67,7 @@ export function CTA() {
                                                 ].map((item, idx) => {
                                                                 const content = (
                                                                                   <>
-                                                                                                   h <item.icon size={24} className="group-hover/link:rotate-12 transition-transform" />
+                <item.icon size={24} className="group-hover/link:rotate-12 transition-transform" />
                                                                                                     <span className="text-lg font-bold">{item.label}</span>
                                                                                   </>
                                                                                 );
