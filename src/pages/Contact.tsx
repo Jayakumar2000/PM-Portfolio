@@ -214,7 +214,7 @@ export function Contact() {
                         <Phone className="absolute left-6 top-1/2 -translate-y-1/2 text-white/20" size={20} />
                         <input
                           required
-                          type="tel"
+                          type="tel" pattern="[0-9+\\s()-]{7,15}" title="Enter a valid phone number (7-15 digits)"
                           name="mobile"
                           value={formData.mobile}
                           onChange={handleChange}
