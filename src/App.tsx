@@ -7,6 +7,7 @@ import { CaseStudies } from "./pages/CaseStudies";
 import { Story } from "./pages/Story";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
+import { Admin } from "./pages/Admin";
 import { AnimatePresence, motion } from "motion/react";
 
 function ScrollToTop() {
@@ -36,6 +37,7 @@ function AnimatedRoutes() {
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/story" element={<Story />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
