@@ -71,7 +71,7 @@ export function Hero() {
           animate="visible"
           className="relative w-full"
         >
-          <h1 className="text-5xl md:text-[110px] font-display font-black leading-[0.85] mb-16 tracking-tighter text-balance max-w-6xl">
+          <h1 aria-label="Engineering the narratives that drive market-winning products." className="text-5xl md:text-[110px] font-display font-black leading-[0.85] mb-16 tracking-tighter text-balance max-w-6xl">
             {words.map((word, i) => (
               <motion.span
                 key={i}
