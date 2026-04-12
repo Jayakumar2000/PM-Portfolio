@@ -68,11 +68,14 @@ function ProjectCard({ project }: { project: any; key?: string | number }) {
     const y = useTransform(scrollYProgress, [0, 1], [-40, 40]);
   
     return (
-          <motion.div
+          <motion.a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ref={ref}
                   variants={itemVariants}
                   whileHover={{ y: -10 }}
-                  className="group relative bg-surface border border-surface-border rounded-3xl overflow-hidden hover:border-brand/50 transition-all"
+                  className="group relative bg-surface border border-surface-border rounded-3xl overflow-hidden hover:border-brand/50 transition-all block cursor-pointer no-underline"
                 >
                 <div className="aspect-[4/3] overflow-hidden relative">
                         <motion.img
@@ -110,17 +113,13 @@ function ProjectCard({ project }: { project: any; key?: string | number }) {
                             ))}
                         </div>
                 
-                        <motion.a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label={`View ${project.title} case study`}
+                        <motion.span
                                     whileHover={{ scale: 1.1, rotate: 45 }}
                                     className="absolute top-6 right-6 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-brand hover:text-white shadow-xl"
                                   >
                                   <ArrowUpRight size={24} />
-                        </motion.a>
+                        </motion.span>
                 </div>
-          </motion.div>
+          </motion.a>
         );
 }
