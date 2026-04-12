@@ -1,4 +1,4 @@
-himport { Project, Skill, Certification, FrameworkStep } from "./types";
+import { Project, Skill, Certification, FrameworkStep } from "./types";
 
 export const PROJECTS: Project[] = [
   {
