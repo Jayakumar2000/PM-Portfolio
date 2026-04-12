@@ -1,4 +1,4 @@
-import { Project, Skill, Certification, FrameworkStep } from "./types";
+himport { Project, Skill, Certification, FrameworkStep } from "./types";
 
 export const PROJECTS: Project[] = [
   {
@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
       { label: "Dev Activation", value: "40%" }
     ],
     tags: ["PRODUCT MARKETING", "API PRODUCT", "B2B", "SPORTS TECH"],
-    link: "https://www.linkedin.com/posts/roanuz-sports_roanuzsports-cricketapi-realtimeupdates-activity-7117826357482811392-L_X6"
+    link: "https://drive.google.com/file/d/180vv9Hilb95JM0i5ZUdhspjq8iEYUnCx/view?usp=drive_link"
   }
 ];
 
