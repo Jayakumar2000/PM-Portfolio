@@ -38,7 +38,7 @@ export function ProjectGrid() {
                                                             Case <span className="text-brand">Studies</span>
                                               </h2>
                                               <p className="text-xl text-white/60 leading-relaxed">
-                                                            A selection of strategic launches and growth initiatives where positioning met execution to deliver measurable revenue impact.
+                                                                                                            This is a curated collection of product initiatives and strategic ideas I developed for real brands and companies. It shows how I approach products, shape their positioning, and help them grow from concept to market.
                                               </p>
                                   </div>
                         </motion.div>
